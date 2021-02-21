@@ -18,6 +18,7 @@ then
 	read file;
 	gpg -c $file
 	echo "File is encrypted"
+	break
 
 elif [ $REPLY = 2 ]
 then 
@@ -26,6 +27,7 @@ then
 	read file2;
 	gpg -d $file2
 	echo "File is decrypted"
+	break
 
 else
 	echo "You have selected invalid option"
