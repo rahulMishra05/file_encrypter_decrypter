@@ -4,7 +4,12 @@
 
 # For this script I had used gpg, which comes preinstalled in kali linux. And you can simply download it for you distribution as well.
 
-echo "File encrypter/decrypter"
+# Variable declaration for adding colour to text
+NONE='\033[00m'
+RED='\033[01;31m'
+GREEN='\033[01;32m'
+
+echo -e "${RED}File encrypter/decrypter${NONE}"
 
 echo "Please select what you want to do"
 
@@ -17,7 +22,7 @@ then
 	echo "Please enter the name of the file (including extension)"
 	read file;
 	gpg -c $file
-	echo "File is encrypted"
+	echo -e "${GREEN}File is encrypted${NONE}"
 	break
 
 elif [ $REPLY = 2 ]
@@ -26,7 +31,7 @@ then
 	echo "Please enter the name of the file (including extension)"
 	read file2;
 	gpg -d $file2
-	echo "File is decrypted"
+	echo -e "${GREEN}File is decrypted${NONE}"
 	break
 
 else
