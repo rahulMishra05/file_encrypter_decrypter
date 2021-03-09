@@ -27,3 +27,5 @@ GPG is an open source standard.
 5. After choosing what you want to do, then enter the file name *(if present in same directory)* or enter the path of the file.
 
 **And that's it your file is encrypted/decrypted**
+
+*If you want to see setp-by-step guide to make this script, then you can read it [here](https://thehackedsite.netlify.app/shell/script/2021/03/08/file-encrypter-decrypter), or the same blog on other platforms like [Dev.to](https://dev.to/rahulmishra05/file-encrypter-and-decrypter-10mo), [Hashnode](https://programmingport.hashnode.dev/file-encrypter-and-decrypter).*
